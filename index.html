@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liqa - Etsy Shop Listing Manager</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #333; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 2rem; margin-bottom: 10px; }
+        h2 { font-size: 1.4rem; margin-top: 30px; margin-bottom: 10px; color: #555; }
+        p { margin-bottom: 15px; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 8px; }
+        .header { background: #f26b3a; color: white; padding: 60px 20px; text-align: center; }
+        .header h1 { font-size: 2.5rem; }
+        .header p { font-size: 1.1rem; opacity: 0.9; }
+        .badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; margin-top: 10px; }
+        footer { text-align: center; padding: 30px; color: #999; font-size: 0.85rem; border-top: 1px solid #eee; margin-top: 40px; }
+        a { color: #f26b3a; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Liqa</h1>
+        <p>A private listing management tool for the Liqa Etsy shop</p>
+        <span class="badge">Private App &mdash; Single User</span>
+    </div>
+    <div class="container">
+        <h2>What is Liqa?</h2>
+        <p>Liqa is a private, single-user Python application built to manage listings for the <a href="https://www.etsy.com/shop/Liqa8" target="_blank">Liqa Etsy shop</a>. It uses the Etsy Open API v3 to batch-upload and manage digital coloring book PDF listings, preview images, tags, and descriptions.</p>
+
+        <h2>Features</h2>
+        <ul>
+            <li>Batch creation of digital download listings via the Etsy Open API v3</li>
+            <li>Upload digital files (PDFs) and listing preview images</li>
+            <li>Manage tags, descriptions, pricing, and categories in bulk</li>
+            <li>OAuth 2.0 with PKCE authentication flow</li>
+        </ul>
+
+        <h2>Who uses this app?</h2>
+        <p>This app is used exclusively by the owner of the Liqa Etsy shop. It is not distributed to other sellers and does not collect or process any third-party user data. It runs locally on a single machine and only accesses the shop owner's own Etsy account.</p>
+
+        <h2>API Endpoints Used</h2>
+        <ul>
+            <li><code>POST /v3/application/shops/{shop_id}/listings</code> &mdash; Create listings</li>
+            <li><code>POST /v3/application/shops/{shop_id}/listings/{listing_id}/files</code> &mdash; Upload digital files</li>
+            <li><code>POST /v3/application/shops/{shop_id}/listings/{listing_id}/images</code> &mdash; Upload listing images</li>
+            <li><code>GET /v3/application/shops/{shop_id}/listings</code> &mdash; Retrieve existing listings</li>
+        </ul>
+
+        <h2>Contact</h2>
+        <p>For questions about this application, contact the developer at <a href="mailto:aqillakhani@gmail.com">aqillakhani@gmail.com</a>.</p>
+
+        <p><a href="/liqa-app/privacy">Privacy Policy</a></p>
+    </div>
+    <footer>
+        &copy; 2026 Liqa. All rights reserved.
+    </footer>
+</body>
+</html>
